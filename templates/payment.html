@@ -7,7 +7,7 @@
 </head>
 <body>
     <h3>This is the payment page</h3>
-    <form action="payment" method="post">
+    <form action="" method="post">
         {% csrf_token %}
         <label for="phone">Phone Number</label>
         <input type="text" name="phone" id="phone" placeholder="Enter Phone Number">
@@ -15,6 +15,7 @@
         <label for="amount"> Amount </label>
         <input type="number" name="amount" id="amount" placeholder="Enter Amount">
 
+        <button type="submit"> Pay </button>
     </form>
 </body>
 </html>
